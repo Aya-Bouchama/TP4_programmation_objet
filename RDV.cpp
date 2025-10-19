@@ -57,9 +57,12 @@ void RDV::setParticipants(string* ps) { participants = ps; }
 void RDV::setParticipant(int i, string s) { participants[i] = s; }
 
 bool RDV::estCompatibleAvec(const RDV& r) const {
-    return !(date.getJour() == r.date.getJour() &&
-             date.getMois() == r.date.getMois() &&
-             date.getAnnee() == r.date.getAnnee() &&
-             heure.getHeure() == r.heure.getHeure() &&
-             heure.getMinute() == r.heure.getMinute());
-}
+
+    if (date.getJour() == r.date.getJour() &&
+        date.getMois() == r.date.getMois() &&
+        date.getAnnee() == r.date.getAnnee() &&
+        heure.getHeure() == r.heure.getHeure() &&
+        heure.getMinute() == r.heure.getMinute())
+        return false;  
+
+    return true; 
