@@ -66,3 +66,4 @@ bool RDV::estCompatibleAvec(const RDV& r) const {
         return false;  
 
     return true; 
+}
