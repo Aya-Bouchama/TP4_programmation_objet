@@ -34,3 +34,6 @@ int Date::getAnnee() const { return annee; }
 void Date::setJour(int j) { if (checkDate(j, mois, annee)) jour = j; }
 void Date::setMois(int m) { if (checkDate(jour, m, annee)) mois = m; }
 void Date::setAnnee(int a) { if (checkDate(jour, mois, a)) annee = a; }
+
+
+

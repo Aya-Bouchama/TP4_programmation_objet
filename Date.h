@@ -22,6 +22,7 @@ public:
     void setJour(int j);
     void setMois(int m);
     void setAnnee(int a);
+
 };
 
 #endif

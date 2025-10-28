@@ -1,31 +1,17 @@
 #ifndef HEURE_H
 #define HEURE_H
 
-#include <iostream>
-using namespace std;
-
 class Heure {
 private:
-    int heure;
-    int minute;
-
+    int heures;
+    int minutes;
 public:
-    
-    Heure();
-
-    
-    Heure(int h, int m);
-
-   
+    Heure(int h = 0, int m = 0);
     void affiche() const;
-
-   
-    int getHeure() const;
-    int getMinute() const;
-
-  
-    void setHeure(int h);
-    void setMinute(int m);
+    int getHeures() const;
+    int getMinutes() const;
+    void setHeures(int h);
+    void setMinutes(int m);
 };
 
 #endif
